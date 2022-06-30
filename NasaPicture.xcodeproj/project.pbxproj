@@ -13,9 +13,13 @@
 		20844E19260BBA8800EE4994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20844E17260BBA8800EE4994 /* Main.storyboard */; };
 		20844E1B260BBA9000EE4994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20844E1A260BBA9000EE4994 /* Assets.xcassets */; };
 		20844E1E260BBA9000EE4994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20844E1C260BBA9000EE4994 /* LaunchScreen.storyboard */; };
+		20844E2E260C86FE00EE4994 /* NasaDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20844E2D260C86FE00EE4994 /* NasaDataManager.swift */; };
+		20D3F6BB260CE9B4002D8248 /* NasaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D3F6BA260CE9B4002D8248 /* NasaData.swift */; };
+		20D3F6BE260CEE0A002D8248 /* NasaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D3F6BD260CEE0A002D8248 /* NasaDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2042F445263571CF007B09CD /* NasaPicture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NasaPicture.entitlements; sourceTree = "<group>"; };
 		20844E0E260BBA8800EE4994 /* NasaPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20844E11260BBA8800EE4994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20844E13260BBA8800EE4994 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,9 @@
 		20844E1A260BBA9000EE4994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20844E1D260BBA9000EE4994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20844E1F260BBA9000EE4994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20844E2D260C86FE00EE4994 /* NasaDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDataManager.swift; sourceTree = "<group>"; };
+		20D3F6BA260CE9B4002D8248 /* NasaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaData.swift; sourceTree = "<group>"; };
+		20D3F6BD260CEE0A002D8248 /* NasaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +63,43 @@
 		20844E10260BBA8800EE4994 /* NasaPicture */ = {
 			isa = PBXGroup;
 			children = (
+				2042F445263571CF007B09CD /* NasaPicture.entitlements */,
 				20844E11260BBA8800EE4994 /* AppDelegate.swift */,
 				20844E13260BBA8800EE4994 /* SceneDelegate.swift */,
-				20844E15260BBA8800EE4994 /* ViewController.swift */,
-				20844E17260BBA8800EE4994 /* Main.storyboard */,
+				20844E2C260C869200EE4994 /* Model */,
+				20844E28260C866200EE4994 /* View */,
+				20844E2A260C867F00EE4994 /* Controller */,
 				20844E1A260BBA9000EE4994 /* Assets.xcassets */,
 				20844E1C260BBA9000EE4994 /* LaunchScreen.storyboard */,
 				20844E1F260BBA9000EE4994 /* Info.plist */,
 			);
 			path = NasaPicture;
+			sourceTree = "<group>";
+		};
+		20844E28260C866200EE4994 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20844E17260BBA8800EE4994 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20844E2A260C867F00EE4994 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20844E15260BBA8800EE4994 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20844E2C260C869200EE4994 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20844E2D260C86FE00EE4994 /* NasaDataManager.swift */,
+				20D3F6BA260CE9B4002D8248 /* NasaData.swift */,
+				20D3F6BD260CEE0A002D8248 /* NasaDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				20844E16260BBA8800EE4994 /* ViewController.swift in Sources */,
+				20844E2E260C86FE00EE4994 /* NasaDataManager.swift in Sources */,
+				20D3F6BB260CE9B4002D8248 /* NasaData.swift in Sources */,
 				20844E12260BBA8800EE4994 /* AppDelegate.swift in Sources */,
+				20D3F6BE260CEE0A002D8248 /* NasaDataModel.swift in Sources */,
 				20844E14260BBA8800EE4994 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NasaPicture/NasaPicture.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7W7DULXL8;
 				INFOPLIST_FILE = NasaPicture/Info.plist;
@@ -295,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mila.lyutok.NasaPicture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NasaPicture/NasaPicture.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7W7DULXL8;
 				INFOPLIST_FILE = NasaPicture/Info.plist;
@@ -314,6 +355,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mila.lyutok.NasaPicture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
